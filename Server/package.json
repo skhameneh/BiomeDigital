@@ -1,0 +1,15 @@
+{
+  "name": "fishmanserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shawn Khameneh",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "socket.io": "^2.2.0"
+  }
+}

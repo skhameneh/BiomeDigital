@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "FishMan",
+			"path": "C:\\Users\\skham\\OneDrive\\Documents\\PlatformIO\\Projects\\FishMan"
+		},
+		{
+			"path": "C:\\Users\\skham\\Documents\\FishManServer"
+		}
+	],
+	"settings": {
+		"terminal.integrated.env.windows": {
+			"PATH": "C:\\Users\\skham\\.platformio\\penv\\Scripts;C:\\Users\\skham\\.platformio\\penv;C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.1\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.1\\libnvvp;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files\\CMake\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2019.1\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Java\\jdk1.8.0_211\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\skham\\AppData\\Local\\Programs\\Python\\Python36\\Scripts\\;C:\\Users\\skham\\AppData\\Local\\Programs\\Python\\Python36\\;C:\\Users\\skham\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\skham\\AppData\\Local\\atom\\bin;C:\\Users\\skham\\AppData\\Local\\Yarn\\bin;C:\\Users\\skham\\AppData\\Roaming\\npm;C:\\Users\\skham\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\skham\\AppData\\Local\\Android\\Sdk\\platform-tools;;C:\\Users\\skham\\AppData\\Local\\Programs\\Fiddler;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\ImageMagick-7.0.8-Q16;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.1\\bin;C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v10.1\\libnvvp;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64_win\\compiler;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler;C:\\Python27\\;C:\\Python27\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files\\CMake\\bin;C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2019.1\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Java\\jdk1.8.0_211\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\skham\\AppData\\Local\\Programs\\Python\\Python36\\Scripts\\;C:\\Users\\skham\\AppData\\Local\\Programs\\Python\\Python36\\;C:\\Users\\skham\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\skham\\AppData\\Local\\atom\\bin;C:\\Users\\skham\\AppData\\Local\\Yarn\\bin;C:\\Users\\skham\\AppData\\Roaming\\npm;C:\\Users\\skham\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\skham\\AppData\\Local\\Android\\Sdk\\platform-tools;;C:\\Users\\skham\\AppData\\Local\\Programs\\Fiddler;%USERPROFILE%\\AppData\\Local\\Microsoft\\WindowsApps",
+			"PLATFORMIO_CALLER": "vscode"
+		}
+	}
+}

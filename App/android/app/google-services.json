@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1083817101897",
+    "firebase_url": "https://biome-digital.firebaseio.com",
+    "project_id": "biome-digital",
+    "storage_bucket": "biome-digital.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083817101897:android:9191ba32626026f1fb8d98",
+        "android_client_info": {
+          "package_name": "digital.biome.MobileApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083817101897-0taur45qpsgum6d8ktqi99f6c99to75i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "digital.biome.MobileApp",
+            "certificate_hash": "54a944da9f83cf4ebf4668a477ea066dab3eeafb"
+          }
+        },
+        {
+          "client_id": "1083817101897-pjsmjg4krk50rnsot3pi8v37v99de1lc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNNxEqxfS2c5OeKALW0INk6ub_VuhkkVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083817101897-pjsmjg4krk50rnsot3pi8v37v99de1lc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
