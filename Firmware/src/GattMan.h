@@ -6,6 +6,15 @@
 #include <BLEUtils.h>
 #include <BLE2902.h>
 
+/*
+#include "esp_bt.h"
+#include "esp_gap_ble_api.h"
+#include "esp_gatts_api.h"
+#include "esp_bt_defs.h"
+#include "esp_bt_main.h"
+#include "esp_gatt_common_api.h"
+*/
+
 #include <Settings.h>
 #include <WifiManager.h>
 #include <SetupModes.h>
@@ -18,12 +27,12 @@
 #define CHARACTERISTIC_UUID_MODE        "f132fb80-32be-4c29-b67f-f78be607eeb4"
 
 // The remote service we wish to connect to.
-//static BLEUUID serviceUUID(S_UUID);
+static BLEUUID serviceUUID(SERVICE_UUID);
 // The characteristic of the remote service we are interested in.
-//static BLEUUID charUUID("be5fc666-e2e5-4b8a-8ce6-ab7f8dcbdc5a");
+static BLEUUID charUUID("be5fc666-e2e5-4b8a-8ce6-ab7f8dcbdc5a");
 
-//static BLERemoteCharacteristic* pRemoteCharacteristic;
-//static BLEAdvertisedDevice* myDevice;
+static BLERemoteCharacteristic* pRemoteCharacteristic;
+static BLEAdvertisedDevice* myDevice;
 
 bool deviceConnected = false;
 bool oldDeviceConnected = false;
@@ -33,7 +42,6 @@ BLECharacteristic *pNetworksCharacteristic = NULL;
 BLECharacteristic *pSsidCharacteristic = NULL;
 BLECharacteristic *pAuthCharacteristic = NULL;
 BLECharacteristic *pModeCharacteristic = NULL;
-
 
 class SsidCharacteristicCallbacks: public BLECharacteristicCallbacks {
   void onWrite(BLECharacteristic *pCharacteristic) {
@@ -69,7 +77,7 @@ class ModeCharacteristicCallbacks: public BLECharacteristicCallbacks {
       int8_t mode;
       mode = value[0];
       LOGGER.print("Got MODE: ");
-      LOGGER.println(mode);
+      //LOGGER.println(mode);
       deviceSetupMode = (int)mode;
     }
   }
@@ -105,7 +113,8 @@ void startBLE() {
     BLECharacteristic::PROPERTY_NOTIFY |
     BLECharacteristic::PROPERTY_INDICATE
   );
-  pNetworksCharacteristic->addDescriptor(new BLE2902());
+  BLE2902* descriptor1 = new BLE2902();
+  pNetworksCharacteristic->addDescriptor(descriptor1);
 
   pSsidCharacteristic = pService->createCharacteristic(
     CHARACTERISTIC_UUID_SSID,
@@ -113,7 +122,8 @@ void startBLE() {
     BLECharacteristic::PROPERTY_NOTIFY |
     BLECharacteristic::PROPERTY_INDICATE
   );
-  pSsidCharacteristic->addDescriptor(new BLE2902());
+  BLE2902* descriptor2 = new BLE2902();
+  pSsidCharacteristic->addDescriptor(descriptor2);
 
   pAuthCharacteristic = pService->createCharacteristic(
     CHARACTERISTIC_UUID_AUTH,
@@ -121,7 +131,8 @@ void startBLE() {
     BLECharacteristic::PROPERTY_NOTIFY |
     BLECharacteristic::PROPERTY_INDICATE
   );
-  pAuthCharacteristic->addDescriptor(new BLE2902());
+  BLE2902* descriptor3 = new BLE2902();
+  pAuthCharacteristic->addDescriptor(descriptor3);
 
   pModeCharacteristic = pService->createCharacteristic(
     CHARACTERISTIC_UUID_MODE,
@@ -129,7 +140,8 @@ void startBLE() {
     BLECharacteristic::PROPERTY_NOTIFY |
     BLECharacteristic::PROPERTY_INDICATE
   );
-  pModeCharacteristic->addDescriptor(new BLE2902());
+  BLE2902* descriptor4 = new BLE2902();
+  pModeCharacteristic->addDescriptor(descriptor4);
 
 
 
@@ -152,5 +164,8 @@ void startBLE() {
   BLEDevice::startAdvertising();
   LOGGER.println("BLE On");
 }
-
+/*
+void startBLE() {
+}
+*/
 #endif

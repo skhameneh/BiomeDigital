@@ -3,10 +3,10 @@
 
 #include <time.h>
 
-#include <SunSet.h>
+//#include <SunSet.h>
 #include <TimeManager.h>
 
-SunSet sun;
+//SunSet sun;
 
 #define LATITUDE 32.7767
 #define LONGITUDE 96.7970
@@ -23,6 +23,7 @@ double brightness = 0;
 #define MINUTES_IN_DAY = 1440;
 
 void updateBrightness() {
+  /*
   struct tm timeinfo;
 
   while(!getLocalTime(&timeinfo)){
@@ -48,9 +49,11 @@ void updateBrightness() {
   LOGGER.println(brightness);
   //LOGGER.print(" @ ");
   //LOGGER.println((int)(brightness * dutyMax));
+  */
 }
 
 void updateSunCycles() {
+  /*
   struct tm timeinfo;
 
   while(!getLocalTime(&timeinfo)){
@@ -78,6 +81,7 @@ void updateSunCycles() {
   LOGGER.print(sunrise);
   LOGGER.print(", Sunset: ");
   LOGGER.println(sunset);
+  */
 }
 
 #endif

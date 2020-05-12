@@ -4,14 +4,15 @@
 
 #include <Logger.h>
 
-#include <ArduinoJson.h>
-#include <WebSocketsClient.h>
-#include <SocketIOclient.h>
+//#include <ArduinoJson.h>
+//#include <WebSocketsClient.h>
+//#include <SocketIOclient.h>
 
 unsigned long messageTimestamp = 0;
 
-SocketIOclient socketIO;
+//SocketIOclient socketIO;
 
+/*
 void hexdump(const void *mem, uint32_t len, uint8_t cols = 16)
 {
     const uint8_t *src = (const uint8_t *)mem;
@@ -27,7 +28,9 @@ void hexdump(const void *mem, uint32_t len, uint8_t cols = 16)
     }
     LOGGER.printf("\n");
 }
+*/
 
+/*
 void socketIOEvent(socketIOmessageType_t type, uint8_t *payload, size_t length)
 {
     switch (type)
@@ -59,11 +62,13 @@ void socketIOEvent(socketIOmessageType_t type, uint8_t *payload, size_t length)
         break;
     }
 }
+*/
 
 void cloudLoop()
 {
-    socketIO.loop();
+    //socketIO.loop();
 
+    /*
     uint64_t now = millis();
 
     if (now - messageTimestamp > 5000)
@@ -72,6 +77,7 @@ void cloudLoop()
 
         messageTimestamp = now;
 
+        
         // creat JSON message for Socket.IO (event)
         DynamicJsonDocument doc(1024);
         JsonArray array = doc.to<JsonArray>();
@@ -95,9 +101,11 @@ void cloudLoop()
 
         // Print JSON for debugging
         LOGGER.println(output);
+        
     }
 
     delay(10);
+    */
 }
 
 #endif
