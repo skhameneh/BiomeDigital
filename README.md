@@ -8,6 +8,11 @@ This software is only to be used for personal education.
 You may not use my GATT identifiers and public SSO services.  
 Please generate your own identities.
 
+## Requirements
+
+ - An ESP32 developer kit.
+ - An Android or iOS device with Bluetooth support.
+
 ## Setup
 
 - Install [VSCode](https://code.visualstudio.com/Download)
