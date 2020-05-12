@@ -1,6 +1,6 @@
 # BiomeDigital
 
-This is a personal all-inclusive IoT attempt using the ESP32 for BLE -> WiFi handoff.  
+This is a personal all-inclusive IoT attempt using the ESP32 for BLE -> WiFi -> WebSocket handoff.  
 
 You may explore this code for non-commecial use only.  
 This software is only to be used for personal education.
