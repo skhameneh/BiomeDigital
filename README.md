@@ -24,3 +24,7 @@ Please generate your own identities.
 - Install [PlatformIO](https://platformio.org/install/ide?install=vscode) for VSCode.
 - Install [NodeJS](https://nodejs.org/en/download/)
 - Open BiomeDigital.code-workspace in VSCode.
+
+## Prototype
+
+![Breadboard Prototype Image](https://github.com/skhameneh/BiomeDigital/raw/master/Breadboard.png)
